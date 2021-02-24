@@ -1,11 +1,12 @@
-@import "./base/normalize.scss";
 //Our CSS Code Goes Here
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./base/base.scss";
 @import "./modules/grid";
 @import "./modules/utilities";
-
+@import "./modules/layout";
+@import "./modules/typograyphy";
+@import "./modules/generic-content";
 // Styling
 @import "./modules/header";
 @import "./modules/hero.scss";

@@ -1,0 +1,47 @@
+.large-hero {
+  position: relative;
+  &__img{
+    display: block;
+    border-bottom: 10px solid $color-main;
+  }
+  &__text-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+  &__title {
+    color: $color-main;
+    font-weight: 300;
+    font-size: 2.6rem;
+    @include respond(small) {
+      font-size: 4.8rem;
+    }
+    margin: 0;
+  }
+  &__subtitle {
+    color: $color-main;
+    font-weight: 300;
+    font-size: 1.5rem;
+    @include respond(small) {
+      font-size: 2.9rem;
+    }
+    margin: 0;
+    margin-bottom: 1.25rem;
+
+    
+  }
+  &__description {
+    color: #fff;
+    font-size: 1.1rem;
+    @include respond(small) {
+      font-size:1.8rem;
+    }
+    font-weight: 100;
+    max-width: 30rem;
+    margin: 0 auto;
+    text-shadow: 2px 2px 0 rgba($color: #000000, $alpha: 0.1);
+  }
+}

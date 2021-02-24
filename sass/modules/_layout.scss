@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 0 18px;
+  max-width: 1236px;
+  margin: 0 auto;
+  &--medium {
+    max-width: 976px;
+  }
+  .wrapper {
+    padding: 0 0;
+  }
+  &--b-margin-large {
+    margin-bottom: 0.5rem;
+
+    @include respond(medium) {
+      margin-bottom: 2rem;
+    }
+    @include respond(large) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+.page-section {
+  padding: 1.2rem 0;
+
+  @include respond(small) {
+    padding: 4.5rem 0;
+  }
+  &--blue {
+    background-color: $color-main;
+    color: #fff;
+  }
+}
