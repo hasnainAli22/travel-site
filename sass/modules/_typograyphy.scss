@@ -43,3 +43,57 @@
     font-weight: 300;
   }
 }
+.heading {
+  &__title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    @include respond(small) {
+      margin-bottom: 2rem;
+    }
+    &--col-small {
+      flex-direction: column;
+      text-align: center;
+      @include respond(small) {
+        flex-direction: row;
+        text-align: left;
+      }
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 3.5rem;
+    margin-top: 1.2rem;
+    @include respond(small) {
+      margin-top: 1.875rem;
+      height: 5rem;
+      margin-right: 1.25rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    @include respond(small) {
+      font-size: 3.75rem;
+    }
+    font-weight: 300;
+
+    & strong {
+      font-weight: 500;
+    }
+    &--small {
+      @include respond(small) {
+        font-size: 3.2rem !important;
+      }
+    }
+    &--margin-small {
+      margin: 1.3rem 0;
+      @include respond(small) {
+        margin: 1.7rem 0;
+      }
+    }
+    &--blue {
+      color: $color-main;
+    }
+  }
+}
