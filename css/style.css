@@ -138,6 +138,33 @@ a {
     width: 75%;
     max-width: 60rem; } }
 
+@media (min-width: 800px) {
+  .grid:not(:last-child) {
+    margin-bottom: 4rem; } }
+
+::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*
+[class^="col-"] {
+  float: left;
+  &:not(:last-child) {
+    margin-right: $horizontal-gutter;
+  }
+}
+*/
+.col-1-of-2 {
+  margin-bottom: 2rem; }
+  @media (min-width: 800px) {
+    .col-1-of-2 {
+      width: calc((100% - 3rem) / 2);
+      float: left; }
+      .col-1-of-2:not(:last-child) {
+        margin-right: 3rem;
+        margin-bottom: 0; } }
+
 .tc {
   text-align: center; }
 
@@ -274,6 +301,76 @@ a {
     @media (min-width: 530px) {
       .large-hero__description {
         font-size: 1.8rem; } }
+
+.feature__title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1.2rem; }
+  @media (min-width: 530px) {
+    .feature__title-container {
+      margin-bottom: 2rem; } }
+
+.feature__icon {
+  display: inline-block;
+  margin-right: 0.8rem;
+  height: 3.5rem;
+  margin-top: 1.2rem; }
+  @media (min-width: 530px) {
+    .feature__icon {
+      margin-top: 1.875rem;
+      height: 5rem;
+      margin-right: 1.25rem; } }
+
+.feature__title {
+  font-size: 2rem;
+  font-weight: 300; }
+  @media (min-width: 530px) {
+    .feature__title {
+      font-size: 3.75rem; } }
+  .feature__title strong {
+    font-weight: 500; }
+
+.feature__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  text-align: center; }
+  @media (min-width: 530px) {
+    .feature__item {
+      padding-left: 6.25rem;
+      text-align: left; } }
+
+.feature__item-icon {
+  position: static;
+  padding-bottom: 1.75rem;
+  height: 3rem; }
+  @media (min-width: 530px) {
+    .feature__item-icon {
+      position: absolute;
+      left: 0;
+      height: 4rem;
+      padding-bottom: 0; } }
+
+.feature__item-title {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 500; }
+  @media (min-width: 530px) {
+    .feature__item-title {
+      font-size: 2rem; } }
+
+.feature__item-desc {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem; }
+  @media (min-width: 530px) {
+    .feature__item-desc {
+      font-size: 1.2rem; } }
 
 .btn {
   background-color: #2f5572;

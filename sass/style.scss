@@ -3,6 +3,7 @@
 @import "./abstracts/mixins";
 @import "./base/base.scss";
 @import "./modules/grid";
+@import "./modules/grid-stystem";
 @import "./modules/utilities";
 @import "./modules/layout";
 @import "./modules/typograyphy";
@@ -10,5 +11,6 @@
 // Styling
 @import "./modules/header";
 @import "./modules/hero.scss";
+@import "./modules/feature";
 @import "./modules/btn"; //buttons components
 @import "./modules/footer";

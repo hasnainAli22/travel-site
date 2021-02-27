@@ -1,0 +1,69 @@
+.feature {
+  &__title-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+    @include respond(small) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    margin-right: 0.8rem;
+    height: 3.5rem;
+    margin-top: 1.2rem;
+    @include respond(small) {
+      margin-top: 1.875rem;
+      height: 5rem;
+      margin-right: 1.25rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    @include respond(small) {
+      font-size: 3.75rem;
+    }
+    font-weight: 300;
+    & strong {
+      font-weight: 500;
+    }
+  }
+  &__item {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    @include respond(small) {
+      padding-left: 6.25rem;
+      text-align: left;
+    }
+  }
+  &__item-icon {
+    position: static;
+    padding-bottom: 1.75rem;
+    height: 3rem;
+
+    @include respond(small) {
+      position: absolute;
+      left: 0;
+      height: 4rem;
+      padding-bottom: 0;
+    }
+  }
+  &__item-title {
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    @include respond(small) {
+      font-size: 2rem;
+    }
+  }
+  &__item-desc {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    @include respond(small) {
+      font-size: 1.2rem;
+    }
+  }
+}

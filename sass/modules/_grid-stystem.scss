@@ -1,0 +1,29 @@
+.grid {
+  // Max Width and Centering Content is getting maintained by .wrapper
+  &:not(:last-child) {
+    @include respond(medium) {
+      margin-bottom: $vertical-gutter;
+    }
+  }
+}
+@include clearfix;
+/*
+[class^="col-"] {
+  float: left;
+  &:not(:last-child) {
+    margin-right: $horizontal-gutter;
+  }
+}
+*/
+
+.col-1-of-2 {
+  margin-bottom: 2rem;
+  @include respond(medium) {
+    width: calc((100% - #{$horizontal-gutter}) / 2);
+    float: left;
+    &:not(:last-child) {
+      margin-right: $horizontal-gutter;
+      margin-bottom: 0;
+    }
+  }
+}
