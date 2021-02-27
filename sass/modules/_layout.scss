@@ -18,8 +18,20 @@
       margin-bottom: 3rem;
     }
   }
+  &--padding-small {
+    padding: 0 0.3rem;
+    @include respond(small) {
+      padding: 0 18px;
+    }
+  }
 }
 .page-section {
+  &--no-padding-small {
+    padding-bottom: 0;
+    @include respond(small) {
+      padding: 1.2rem 0;
+    }
+  }
   padding: 1.2rem 0;
 
   @include respond(small) {
@@ -28,5 +40,14 @@
   &--blue {
     background-color: $color-main;
     color: #fff;
+  }
+  &--testimonial {
+    background-color: #e0e6ef;
+    @include respond(small) {
+      background-image: url(../assets/testimonials-bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 }

@@ -1,33 +1,4 @@
 .feature {
-  &__title-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.2rem;
-    @include respond(small) {
-      margin-bottom: 2rem;
-    }
-  }
-  &__icon {
-    display: inline-block;
-    margin-right: 0.8rem;
-    height: 3.5rem;
-    margin-top: 1.2rem;
-    @include respond(small) {
-      margin-top: 1.875rem;
-      height: 5rem;
-      margin-right: 1.25rem;
-    }
-  }
-  &__title {
-    font-size: 2rem;
-    @include respond(small) {
-      font-size: 3.75rem;
-    }
-    font-weight: 300;
-    & strong {
-      font-weight: 500;
-    }
-  }
   &__item {
     box-sizing: border-box;
     position: relative;
